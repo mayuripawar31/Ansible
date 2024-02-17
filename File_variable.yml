@@ -1,0 +1,10 @@
+---
+- name: This is my file varibale playbook
+  hosts: all
+  vars_files: mayuri.yml
+  tasks:
+    - name: task done by me
+      debug:
+        msg: "{{URL}}"
+
+...
