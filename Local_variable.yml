@@ -1,0 +1,10 @@
+---
+- name: This playbook for local variable
+  hosts: all
+  tasks:
+    - name: Task provided by mayuri
+      debug:
+        msg: "{{URL}}"
+  vars:
+      URL: www.DevOps.com
+...
